@@ -1,3 +1,4 @@
+// C:\Users\49mat\OneDrive\Desktop\habit-app\drizzle.config.ts
 import type { Config } from "drizzle-kit";
 
 export default {
