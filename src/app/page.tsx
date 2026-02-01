@@ -1,5 +1,7 @@
 // C:\Users\49mat\OneDrive\Desktop\habit-app\src\app\page.tsx
+
 import HabitGrid from "./components/HabitGrid";
+import ClientOnly from "./components/ClientOnly";
 
 export default function Page() {
   return (
@@ -9,8 +11,11 @@ export default function Page() {
         <p className="mt-2 text-slate-300">
           4週間・習慣化チェック（クリックで切替）
         </p>
+
         <div className="mt-6">
-          <HabitGrid />
+          <ClientOnly>
+            <HabitGrid />
+          </ClientOnly>
         </div>
       </div>
     </main>
